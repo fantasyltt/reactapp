@@ -1,4 +1,4 @@
-import './List.css';
+import './List.less';
 
 function List() {
   return (
