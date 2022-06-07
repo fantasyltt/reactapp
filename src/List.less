@@ -57,7 +57,8 @@
           display: block;
           width: 100%;
           border-radius: 10px;
-          margin-bottom: 20px;
+          margin-bottom: 25px;
+          transition:all .3s ease;
         }
         .title{
           font-size: 14px;
@@ -70,12 +71,20 @@
             font-size: 12px;
           }
         }
+        &:hover img{
+          transition:all .3s ease;
+          box-shadow: 0 15px 25px 0px rgba(0, 0, 140, 0.1);
+          -webkit-transform: scale(1.02,1.02);
+          transform: scale(1.02,1.02);
+        }
       }
     }
     .listEnd{
       clear: both;
       text-align: center;
       margin-bottom: 50px;
+      color: #666666;
+      font-size: 14px;
     }
   }
 }
