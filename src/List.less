@@ -1,4 +1,46 @@
 .List{
-  font-size: 130px;
-  color: #f00;
+  font-size:16x;
+  color: #65666E;
+  padding: 0 114px;
+  .listSelect{
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+    .selector{
+      border: 1px solid #D4D8E1;
+      width: 155px;
+      height: 42px;
+      line-height: 42px;
+      padding: 0 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      span{
+        width: 14px;
+        height: 14px;
+        background: url(/src/assets/images/arr-down.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      height: 42px;
+      li{
+        margin-left: 100px;
+        cursor: pointer;
+        color: #65666E;
+        &.active{
+          font-weight: bold;
+          color: #464751;
+        }
+        &:hover{
+          color: #464751;
+        }
+      }
+    }
+  }
 }

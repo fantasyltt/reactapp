@@ -1,20 +1,25 @@
-import logo from './logo.svg';
-import './Header.css';
+import './Header.less';
 
-function Header() {
+const Header = (props) => {
   return (
     <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="headerBg">
+         <img src={require("./assets/images/logo.png")} className="logo" alt="logo" />
         <div className="nav">
           <ul>
-            <li>作品集</li>
+            <li className='active'>作品集</li>
             <li>简历</li>
           </ul>
         </div>
         <div className="info">
-          <span>Lucas Erickson</span>
-          <img src={logo} alt="avata" />
+          <span>LucasErickson</span>
+          <img src={require("./assets/images/avatar.jpg")} alt="avatar" />
         </div>
+      </div>
+      <div className="banner">
+      <img src={require("./assets/images/banner.jpg")} alt="avatar" />
+      </div>
+       
       </header>
   );
 }

@@ -1,6 +1,6 @@
-import './Footer.css';
+import './Footer.less';
 
-function Footer() {
+const Footer = (props) =>{
   return (
     <div className="footer">
       <div className="mail">8631142@qq.com</div>

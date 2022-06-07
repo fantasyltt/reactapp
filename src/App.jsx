@@ -1,9 +1,9 @@
 import Header from './Header';
 import List from './List';
 import Footer from './Footer';
-import './App.css';
+import './App.less';
 
-function App() {
+const App = (props) =>{
   return (
     <div className="App">
       <Header />
