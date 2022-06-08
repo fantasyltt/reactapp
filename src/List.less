@@ -2,6 +2,10 @@
   font-size:16x;
   color: #65666E;
   padding: 0 114px;
+  display: none;
+  &.Acitve{
+    display: block;
+  }
   .listSelect{
     display: flex;
     padding: 50px 0;
@@ -59,6 +63,7 @@
           border-radius: 10px;
           margin-bottom: 25px;
           transition:all .3s ease;
+          border: .5px solid rgba(0, 0, 0, 0.05);
         }
         .title{
           font-size: 14px;
@@ -74,8 +79,8 @@
         &:hover img{
           transition:all .3s ease;
           box-shadow: 0 15px 25px 0px rgba(0, 0, 140, 0.1);
-          -webkit-transform: scale(1.02,1.02);
-          transform: scale(1.02,1.02);
+          -webkit-transform: scale(1.01,1.01);
+          transform: scale(1.01,1.01);
         }
       }
     }
@@ -86,5 +91,93 @@
       color: #666666;
       font-size: 14px;
     }
+  }
+}
+
+.detailBox{
+  position: fixed;
+  padding-top: 90px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1000;
+  display: none;
+    &.active{
+      display: block;
+    }
+    .close{
+      background: url(./assets/images/close.png) no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 28px;
+      right:28px;
+      width: 38px;
+      height: 38px;
+      cursor: pointer;
+    }
+    .detailBg{
+      background: #fff;
+      border-radius: 15px 15px 0 0;
+      padding:0 0 50px;
+    }
+    .detailTitle{
+      font-size: 24px;
+      font-weight:500;
+      color: #464751;
+      text-align: center;
+      padding:50px 0;
+      span{
+        display: block;
+        color: #8D8E96;
+        font-size: 14px;
+      }
+    }
+    .detailImg{
+      text-align: center;
+      padding: 0 5%;
+      img{
+        width: 100%;
+        max-width: 1200px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .closeBtn{
+      text-align: center;
+      padding-top: 50px;
+      span{
+        display: inline-block;
+        border: 1px solid #D4D8E1;
+        padding: 5px 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        color: #8D8E96;
+        &:hover{
+          color: #464751;
+          background: #f5f6f7;
+          border: 1px solid #cfd2db;
+        }
+      }
+    }
+}
+
+.detailShadow{
+  background:rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  display: none;
+  &.active{
+    display: block;
   }
 }
