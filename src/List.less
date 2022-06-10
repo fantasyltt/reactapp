@@ -6,6 +6,11 @@
   &.Acitve{
     display: block;
   }
+
+  @keyframes turnX{
+  0%{transform:rotateX(0deg);}
+  100%{transform:rotateX(360deg);}
+}
   .listSelect{
     display: flex;
     padding: 50px 0;
@@ -22,14 +27,58 @@
       align-items: center;
       font-size: 14px;
       cursor: pointer;
+      position: relative;
       span{
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
         background: url(/src/assets/images/arr-down.png) no-repeat;
         background-size: contain;
+        transition:all .3s ease;
+      }
+      .selectList{
+        position: absolute;
+        width: 155px;
+        padding-top: 47px;
+        top: 0;
+        left: -1px;
+        display: none;
+      }
+      ul{
+        border-radius: 10px;
+        background: #f8faff;
+        border: 1px solid #ebeef4;
+        li{
+          margin: 0;
+          padding: 0 20px;
+          &.active{
+            font-weight: bold;
+            color: #547bf6;
+          }
+          &:hover{
+            background: #fff;
+          }
+          &:first-child{
+            border-radius: 10px 10px 0 0;
+          }
+          &:last-child{
+            border-radius: 0 0 10px 10px;
+          }
+        }
+      }
+      &:hover{
+        background: #f8faff;
+        border: 1px solid #ebeef4;
+        span{
+          -webkit-transform: rotate(-180deg);
+          -moz-transform: rotate(-180deg); /* flip horizontally 180deg*/
+          transform: rotate(-180deg);
+        }
+        .selectList{
+          display: block;
+        }
       }
     }
-    ul{
+    .selectNav ul{
       display: flex;
       align-items: center;
       height: 42px;

@@ -374,7 +374,17 @@ const List = (props) =>{
   return (
     <div className={props.show==0?"List Acitve":"List"}>
       <div className="listSelect">
-        <div className="selector">默认<span></span></div>
+        <div className="selector">
+          默认<span></span>
+          <div className="selectList">
+            <ul>
+              <li className='active'>默认</li>
+              <li>最新</li>
+              <li>2019前</li>
+            </ul>
+          </div>
+          
+        </div>
         <div className="selectNav">
           <ul>
             {caseType.map((item) => {
