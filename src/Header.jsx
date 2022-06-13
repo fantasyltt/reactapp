@@ -40,9 +40,7 @@ const Header = (props) => {
           <img src={require("./assets/images/avatar.jpg")} alt="avatar" />
         </div>
       </div>
-      <div className="banner">
-      <img src={require("./assets/images/banner.jpg")} alt="avatar" />
-      </div>
+      <div className="banner"></div>
        
       </header>
   );

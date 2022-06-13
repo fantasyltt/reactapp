@@ -9,15 +9,15 @@ const List = (props) =>{
     },
     {
       id:1,
-      title:"APP"
-    },
-    {
-      id:2,
       title:"网页"
     },
     {
-      id:3,
+      id:2,
       title:"H5"
+    },
+    {
+      id:3,
+      title:"APP"
     },
     {
       id:4,
@@ -33,10 +33,7 @@ const List = (props) =>{
     }
   ]
 
-  const [active,setTab]  = useState(0)
-  function switchTab(index) {
-    setTab(index)
-  }
+
 
   const caseList = [
     {
@@ -252,7 +249,7 @@ const List = (props) =>{
     {
       id:36,
       title:'车保宝官方网站（2019前）',
-      type:'广告',
+      type:'网页',
       year:2019
     },
     {
@@ -370,7 +367,50 @@ const List = (props) =>{
       year:2019
     }
   ]
+
+  const [active,setTab]  = useState(0)
+  function switchTab(index) {
+    setTab(index)    
+  }
+
   
+  const [showDetail,setDetail]  = useState(0)
+  const [showtitle,setTitle]  = useState("")
+  const [showType,setType]  = useState("")
+  function switchDetail(e,t,p) {
+    let detailBox = document.querySelector('.detailBox');
+    let detailShadow = document.querySelector('.detailShadow');
+    setDetail(e)
+    setType(p)
+    setTitle(t)
+    detailBox.className='detailBox active'
+    detailShadow.className='detailShadow active'
+    console.log(e);
+  }
+  let inner;
+  if (showDetail==5) {
+    inner=
+      <div className="detailImg">
+        <video width="100%" autoplay="autoplay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
+          您的浏览器不支持Video标签。
+        </video>
+      </div>
+  }else{
+    inner=
+      <div className="detailImg"><img src={require("./assets/detail/detail-"+showDetail+".jpg")} alt="" /></div>
+  }
+  const showImg =(
+    <div>
+      { inner }
+    </div>
+  )
+  function hideDetail() {
+    let detailBox = document.querySelector('.detailBox');
+    let detailShadow = document.querySelector('.detailShadow');
+    detailBox.className='detailBox'
+    detailShadow.className="detailShadow"
+  }
+
   return (
     <div className={props.show==0?"List Acitve":"List"}>
       <div className="listSelect">
@@ -404,25 +444,69 @@ const List = (props) =>{
       <div className="caseList">
         <ul>
           {
-            caseList.map((item,index) => (
-                <li key={index}>
-                <img src={require("./assets/cover/c-"+item.id+".jpg")} alt="" />
-                <div className="title">{item.title}<span>{item.type}</span></div>
-              </li>
-            ))
+            caseList.map((item,index) => {
+              const _html = (
+                  <li key={index} onClick={switchDetail.bind(this,item.id,item.title,item.type)}>
+                    <img src={require("./assets/cover/c-"+item.id+".jpg")} alt="" />
+                    <div className="title">{item.title}<span>{item.type}</span></div>
+                  </li>
+              )
+              if (active==0) {
+                 return(
+                  _html
+                )
+              }else if(active==1){
+                if (item.type=="网页" || item.type=="网页/H5") {
+                  return(
+                    _html
+                  )
+                }
+              }else if(active==2){
+                if (item.type=="H5" || item.type=="网页/H5") {
+                  return(
+                    _html
+                  )
+                }
+              }else if(active==3){
+                if (item.type=="APP") {
+                  return(
+                    _html
+                  )
+                }
+              }else if(active==4){
+                if (item.type=="广告") {
+                  return(
+                    _html
+                  )
+                }
+              }else if(active==5){
+                if (item.type=="视频动画") {
+                  return(
+                    _html
+                  )
+                }
+              }else if(active==6){
+                if (item.type=="其他") {
+                  return(
+                    _html
+                  )
+                }
+              }
+               
+          })
           }
         </ul>
         <div className="listEnd">You’ve reached the end of the list</div>
       </div>
       <div className="detailBox">
-        <div className="close"></div>
+        <div className="close" onClick={hideDetail.bind(this)}></div>
         <div className="detailBg">
-          <div className="detailTitle">分享行动落地页<span>网页/H5</span></div>
-          <div className="detailImg"><img src={require("./assets/detail/detail-2.jpg")} alt="" /></div>
-          <div className="closeBtn"><span>关闭</span></div>
+          <div className="detailTitle">{showtitle}<span>{showType}</span></div>
+          {showImg}          
+          <div className="closeBtn"><span onClick={hideDetail.bind(this)}>关闭</span></div>
         </div>
       </div>
-      <div className="detailShadow"></div>
+      <div className="detailShadow" onClick={hideDetail.bind(this)}></div>
 
     </div>
   );
