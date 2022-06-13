@@ -373,18 +373,16 @@ const List = (props) =>{
     setTab(index)    
   }
 
-  
+
+  const [hide,hideDetail]  = useState(false)
   const [showDetail,setDetail]  = useState(0)
   const [showtitle,setTitle]  = useState("")
   const [showType,setType]  = useState("")
   function switchDetail(e,t,p) {
-    let detailBox = document.querySelector('.detailBox');
-    let detailShadow = document.querySelector('.detailShadow');
     setDetail(e)
     setType(p)
     setTitle(t)
-    detailBox.className='detailBox active'
-    detailShadow.className='detailShadow active'
+    hideDetail(true)
     console.log(e);
   }
   let inner;
@@ -404,27 +402,51 @@ const List = (props) =>{
       { inner }
     </div>
   )
-  function hideDetail() {
-    let detailBox = document.querySelector('.detailBox');
-    let detailShadow = document.querySelector('.detailShadow');
-    detailBox.className='detailBox'
-    detailShadow.className="detailShadow"
+  function hideBtn() {
+    hideDetail(false)
+  }
+
+const SelectList = [
+  {
+    id:0,
+    title:"默认"
+  },
+  {
+    id:1,
+    title:"最新"
+  },
+  {
+    id:2,
+    title:"2019前"
+  }
+]
+const [selected,setSelect]  = useState(0)
+const [selectedText,setSelectText]  = useState("默认")
+function switchSelect(e) {
+    console.log(e);
+    setSelect(e)
+    setSelectText(SelectList[e].title)
   }
 
   return (
     <div className={props.show==0?"List Acitve":"List"}>
       <div className="listSelect">
-        <div className="selector">
-          默认<span></span>
+        
+        <div className="selector">{selectedText}<span></span>
           <div className="selectList">
             <ul>
-              <li className='active'>默认</li>
-              <li>最新</li>
-              <li>2019前</li>
+              {SelectList.map((item) => {
+                return (
+                    <li key={item.id} className={selected==item.id?'active':''} onClick={switchSelect.bind(this,item.id)}>{item.title}</li>
+                  )
+              })}
             </ul>
           </div>
           
         </div>
+
+        
+
         <div className="selectNav">
           <ul>
             {caseType.map((item) => {
@@ -498,15 +520,15 @@ const List = (props) =>{
         </ul>
         <div className="listEnd">You’ve reached the end of the list</div>
       </div>
-      <div className="detailBox">
-        <div className="close" onClick={hideDetail.bind(this)}></div>
+      <div className={hide==true?"detailBox active":"detailBox"}>
+        <div className="close" onClick={hideBtn.bind(this)}></div>
         <div className="detailBg">
           <div className="detailTitle">{showtitle}<span>{showType}</span></div>
           {showImg}          
-          <div className="closeBtn"><span onClick={hideDetail.bind(this)}>关闭</span></div>
+          <div className="closeBtn"><span onClick={hideBtn.bind(this)}>关闭</span></div>
         </div>
       </div>
-      <div className="detailShadow" onClick={hideDetail.bind(this)}></div>
+      <div className={hide==true?"detailShadow active":"detailShadow"} onClick={hideBtn.bind(this)}></div>
 
     </div>
   );
