@@ -500,8 +500,8 @@ function switchSelect(e) {
   return (
     <div className={props.show==0?"List Acitve":"List"} >
 
-      <div className={selectHover==false?"listSelect hover":"listSelect"} onClick={openSelect.bind(this)}>
-        <div className="selector">{selectedText}<span></span>
+      <div className="listSelect" >
+        <div className={selectHover==false?"selector hover":"selector"} onClick={openSelect.bind(this)}>{selectedText}<span></span>
           <div className="selectList">
             <ul>
               {SelectList.map((item) => {
