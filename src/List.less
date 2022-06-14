@@ -21,9 +21,6 @@
     display: flex;
     padding: 50px 0;
     justify-content: space-between;
-    @media screen and (max-width:430px) {
-      display: block;
-    }
     .selector{
       border: 1px solid #D4D8E1;
       width: 155px;
@@ -101,6 +98,28 @@
         }
         &:hover{
           color: #464751;
+        }
+      }
+    }
+
+    @media screen and (max-width:1280px) {
+      display: block;
+      padding: 30px 0 20px;
+      .selector{
+        width: 100%;
+        .selectList{
+          width: 100%;
+        }
+      }
+      .selectNav{
+        padding: 20px 0 0;
+        ul{
+          justify-content:space-between;
+          padding: 0 5px;
+          li{
+            padding: 0;
+            margin: 0;
+          }
         }
       }
     }

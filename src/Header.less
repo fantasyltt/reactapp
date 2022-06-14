@@ -10,7 +10,7 @@
     width: 128px;
   }
   @media screen and (max-width:430px) {
-    width: 108px;
+    width: 98px;
   }
 }
 .nav{
@@ -38,11 +38,12 @@
     }
   }
   @media screen and (max-width:1280px) {
-    font-size: 18px;
   }
   @media screen and (max-width:860px) {
+    font-size: 18px;
   }
   @media screen and (max-width:430px) {
+    font-size: 16px;
   }
 }
 .info{
@@ -72,7 +73,7 @@
   padding: 0 114px;
   width: 100%;
   @media screen and (max-width:1280px) {
-    padding: 0 24px;
+    padding: 0 24px;    
   }
   @media screen and (max-width:860px) {
   }
@@ -103,13 +104,17 @@
   }
   @media screen and (max-width:1280px) {
     padding: 0 24px;
+    background:rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 999;
   }
   @media screen and (max-width:860px) {
-    height:90px;
-    background: rgba(255, 255, 255, .5);
+    height:70px;
   }
   @media screen and (max-width:430px) {
-    height:70px;
+    height:60px;
   }
 }
 .banner{
@@ -128,9 +133,10 @@
   }
   @media screen and (max-width:860px) {
     background-size:1000px;
+    min-height: 200px;
   }
   @media screen and (max-width:430px) {
-    background-size:1000px;
+    background-size:900px;
     min-height: 200px;
   }
 }
