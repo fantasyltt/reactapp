@@ -437,7 +437,7 @@ const List = (props) =>{
 
 
   const [hide,hideDetail]  = useState(false)
-  const [showDetail,setDetail]  = useState(0)
+  const [showDetail,setDetail]  = useState()
   const [showtitle,setTitle]  = useState("")
   const [showType,setType]  = useState("")
   function switchDetail(e,t,p) {
@@ -448,7 +448,11 @@ const List = (props) =>{
     console.log(e);
   }
   let inner;
-  if (showDetail==5) {
+  if(showDetail==undefined){
+    inner=
+      <div className="detailImg"></div>
+
+  }else if (showDetail==5) {
     inner=
       <div className="detailImg">
         <video width="100%" autoplay="autoplay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
@@ -481,17 +485,22 @@ const SelectList = [
   }
 ]
 const [selected,setSelect]  = useState(0)
-const [selectedText,setSelectText]  = useState("默认")
+const [selectHover,setSelectHover] = useState(true)
+const [selectedText,setSelectText] = useState("默认")
+function openSelect() {
+  setSelectHover(!selectHover)
+}
 function switchSelect(e) {
     console.log(e);
     setSelect(e)
     setSelectText(SelectList[e].title)
-  }
+    setSelectHover(true)
+}
 
   return (
-    <div className={props.show==0?"List Acitve":"List"}>
-      <div className="listSelect">
-        
+    <div className={props.show==0?"List Acitve":"List"} >
+
+      <div className={selectHover==false?"listSelect hover":"listSelect"} onClick={openSelect.bind(this)}>
         <div className="selector">{selectedText}<span></span>
           <div className="selectList">
             <ul>

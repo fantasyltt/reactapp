@@ -71,18 +71,21 @@
           }
         }
       }
-      &:hover{
-        background: #f8faff;
-        border: 1px solid #ebeef4;
-        span{
-          -webkit-transform: rotate(-180deg);
-          -moz-transform: rotate(-180deg); /* flip horizontally 180deg*/
-          transform: rotate(-180deg);
-        }
-        .selectList{
-          display: block;
-        }
+      
+    }
+    &.hover{
+      .selector{
+      background: #f8faff;
+      border: 1px solid #ebeef4;
+      span{
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg); /* flip horizontally 180deg*/
+        transform: rotate(-180deg);
       }
+      .selectList{
+        display: block;
+      }
+    }
     }
     .selectNav ul{
       display: flex;
