@@ -36,7 +36,7 @@ const Header = (props) => {
           </ul>
         </div>
         <div className="info">
-          <span>LucasErickson</span>
+          <span>雷涛涛</span>
           <img src={require("./assets/images/avatar.jpg")} alt="avatar" />
         </div>
       </div>
