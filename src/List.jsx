@@ -38,14 +38,14 @@ const List = (props) =>{
   const caseList = [
     {
     id:0,
-    rank:1,
+    rank:0,
     title:'SVO APP 新项目',
     type:'APP',
     year:2021
     },
     {
       id:1,
-      rank:0,
+      rank:1,
       title:'金桔汇 APP 最新改版',
       type:'APP',
       year:2021
@@ -87,21 +87,21 @@ const List = (props) =>{
     },
     {
       id:7,
-      rank:7,
+      rank:17,
       title:'GM 代理联盟计划',
       type:'网页',
       year:2021
     },
     {
       id:8,
-      rank:8,
+      rank:3.1,
       title:'SovFx 日文新年活动',
       type:'网页/H5',
       year:2021
     },
     {
       id:9,
-      rank:9,
+      rank:19,
       title:'ForFX 官网',
       type:'网页',
       year:2021
@@ -129,7 +129,7 @@ const List = (props) =>{
     },
     {
       id:13,
-      rank:13,
+      rank:6.1,
       title:'GM APP 抽奖活动',
       type:'H5',
       year:2021
@@ -143,7 +143,7 @@ const List = (props) =>{
     },
     {
       id:15,
-      rank:15,
+      rank:7.1,
       title:'行情速递落地页',
       type:'网页/H5',
       year:2021
@@ -157,7 +157,7 @@ const List = (props) =>{
     },
     {
       id:17,
-      rank:17,
+      rank:5.1,
       title:'盈汇黄金推广落地页',
       type:'H5',
       year:2021
@@ -185,14 +185,14 @@ const List = (props) =>{
     },
     {
       id:21,
-      rank:21,
+      rank:10.1,
       title:'各类广告banner设计',
       type:'广告',
       year:2021
     },
     {
       id:22,
-      rank:22,
+      rank:8.1,
       title:'金桔汇 App Store 上架图',
       type:'其他',
       year:2021
@@ -206,7 +206,7 @@ const List = (props) =>{
     },
     {
       id:24,
-      rank:24,
+      rank:8.2,
       title:'APP启动页',
       type:'广告',
       year:2021
@@ -241,28 +241,28 @@ const List = (props) =>{
     },
     {
       id:29,
-      rank:29,
+      rank:18.1,
       title:'LinkWits App 引导页',
       type:'其他',
       year:2021
     },
     {
       id:30,
-      rank:30,
+      rank:25.1,
       title:'App 引导页',
       type:'其他',
       year:2021
     },
     {
       id:31,
-      rank:31,
+      rank:16.1,
       title:'新年氛围 icon',
       type:'其他',
       year:2021
     },
     {
       id:32,
-      rank:32,
+      rank:16.2,
       title:'圣诞氛围 icon',
       type:'其他',
       year:2021
@@ -476,12 +476,12 @@ const SelectList = [
   {
     id:0,
     title:"默认",
-    sort:(a,b) => a
+    sort:(a,b) => a.rank - b.rank
   },
   {
     id:1,
     title:"最新",
-    sort:(a,b) => a.rank - b.rank
+    sort:(a,b) => a
   }
 ]
 const [selected,setSelect]  = useState(0)

@@ -14,12 +14,12 @@
   }
 }
 .nav{
-  width: 100%;
   padding-left: 40px;
   margin-left: 40px;
   border-left: 1px solid #BFC2CB;
   height: 24px;
   flex-shrink: 1;
+  flex-grow: 1;
   font-size: 20px;
   ul{
     margin: 0;
@@ -57,8 +57,10 @@
 .info{
   display: flex;
   align-items: center;
-  flex-grow: 1;
   font-weight: 500;
+  span{
+    flex-shrink: 0;
+  }
   img{
     border-radius: 100%;
     width: 50px;
