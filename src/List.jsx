@@ -445,7 +445,6 @@ const List = (props) =>{
     setType(p)
     setTitle(t)
     hideDetail(true)
-    console.log(e);
   }
   let inner;
   if(showDetail==undefined){
@@ -470,6 +469,7 @@ const List = (props) =>{
   )
   function hideBtn() {
     hideDetail(false)
+    setDetail()
   }
 
 const SelectList = [
