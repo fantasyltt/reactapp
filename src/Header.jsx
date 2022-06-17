@@ -16,6 +16,10 @@ const Header = (props) => {
     setTab(index)
     props.tabId(index)
   }
+  function linkResume() {
+    setTab(1)
+    props.tabId(1)
+  }
   return (
     <header className="App-header">
       <div className="headerBg">
@@ -35,7 +39,7 @@ const Header = (props) => {
               })}
           </ul>
         </div>
-        <div className="info">
+        <div className="info" onClick={linkResume.bind(this)}>
           <span>雷涛涛</span>
           <img src={require("./assets/images/avatar.jpg")} alt="avatar" />
         </div>
