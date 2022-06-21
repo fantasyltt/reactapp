@@ -261,6 +261,69 @@ const List = (props) =>{
       year:2021
     },
     {
+      id:56,
+      rank:10.2,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:57,
+      rank:16.2,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:58,
+      rank:13,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:59,
+      rank:32.1,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:60,
+      rank:32.3,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:61,
+      rank:17.1,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:62,
+      rank:17.2,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:63,
+      rank:32.4,
+      title:'Gold Mandarin 广告宣传GM视频',
+      type:'视频动画',
+      year:2021
+    },
+    {
+      id:64,
+      rank:17.3,
+      title:'Gold Mandarin 新手教程',
+      type:'视频动画',
+      year:2021
+    },
+    {
       id:32,
       rank:16.2,
       title:'圣诞氛围 icon',
@@ -451,9 +514,9 @@ const List = (props) =>{
     inner=
       <div className="detailImg"></div>
 
-  }else if (showDetail==5) {
+  }else if (showDetail==5||showDetail==56||showDetail==57||showDetail==58||showDetail==59||showDetail==60||showDetail==61||showDetail==62||showDetail==63||showDetail==64) {
     inner=
-      <div className="detailImg">
+      <div className={showDetail==64?"detailImg widthVideo":"detailImg"}>
         <video width="100%" autoplay="autoplay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
           您的浏览器不支持Video标签。
         </video>
