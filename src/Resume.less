@@ -1,11 +1,105 @@
 .resume{
   font-size:16x;
-  color: #65666E;
+  color: #6F7792;
   padding: 0 114px;
-  margin: 50px 0;
+  margin: 50px auto 100px;
   display: none;
+  max-width: 1440px;
   &.active{
-    display: block;
+    display: flex;
+  }
+  .left{
+    width: 25%;
+    padding: 0 24px;
+  }
+  .right{
+    width: 75%;
+    padding: 0 24px 0 48px;
+  }
+  .resumeInfo{
+    text-align: center;
+    img{
+      width: 140px;
+    }
+    .resumeName{
+      font-size: 28px;
+      color: #404451;
+      text-align: center;
+      line-height: 30px;
+      padding: 20px 0;
+      span{
+        font-size: 18px;
+        display: block;
+        padding-top: 5px;
+      }
+    }
+    p{
+      margin: 0;
+      padding: 3px 0;
+      font-size: 14px;
+    }
+  }
+  .reTitle{
+    font-size:24px;
+    color: #404451;
+    font-weight: bold;
+    padding-left: 60px;
+    line-height: 40px;
+    height: 80px;
+    &.titleSkill{
+      background: url(./assets/images/skill.png) no-repeat;
+      background-size: 50px 50px;
+    }
+    &.titleSelf{
+      background: url(./assets/images/self.png) no-repeat;
+      background-size: 50px 50px;
+    }
+    &.titleWork{
+      background: url(./assets/images/work.png) no-repeat;
+      background-size: 50px 50px;
+    }
+    &.titleProject{
+      background: url(./assets/images/project.png) no-repeat;
+      background-size: 50px 50px;
+    }
+    &.titleEdu{
+      background: url(./assets/images/edu.png) no-repeat;
+      background-size: 50px 50px;
+    }
+  }
+  .skill{
+    padding: 60px 0 30px;
+  }
+  .self{
+    padding: 60px 0 30px;
+    .slefText{
+      line-height: 30px;
+      text-align: justify;
+    }
+  }
+  .work{
+    padding: 40px 0 30px;
+    ul{
+      border-left: 1px solid #DFDFED;
+      margin-left: 20px;
+      padding-left: 45px;
+    }
+  }
+  .project{
+    padding: 60px 0 30px;
+    ul{
+      border-left: 1px solid #DFDFED;
+      margin-left: 20px;
+      padding-left: 45px;
+    }
+  }
+  .edu{
+    padding: 60px 0 30px;
+    ul{
+      border-left: 1px solid #DFDFED;
+      margin-left: 20px;
+      padding-left: 45px;
+    }
   }
   @media screen and (max-width:1280px) {
     padding: 0 24px;

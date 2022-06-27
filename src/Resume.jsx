@@ -3,7 +3,74 @@ import './Resume.less';
 const Resume = (props) =>{
   return (
     <div className={props.show==1?"resume active":"resume"}>
-      想院飞十将度非治质民团和般山至大克我以农全节平两将路快那则展即按就般信还今种南会却行年族证年区照对照酸系现。完便会六世性各外市步方义亲年极员治打团为容设养周线劳论干使改圆年间国交风有己儿派期向论况规里自府查据头接始维。变二众林难新目题养只业同通认合造好平离却该列改人须达压资周构做每空政场光面外眼管个线立权观立外整军从联先织下影连。么维示海国门数原矿感则给式积美结处厂认相细要段已林构风真质青马开此住单便好南政象想状元离造也。周西至你山列设细过又还六温什劳前民解半天应响最而道重每现再系以月斯育门青速口太规党数决法行叫三织等八强三表面于。听成快联商专清越细拉二装可向些志过系下二层内适活就细据具把派来过么参斗着转此写研治目切争争改位建政着科便区识东已。全识式图如共场回里作写身办布过应北引革选志关看山性级外派听权时她运海整外力院道该形空看自少素只年严步况主率完思回马且生织交进当或效。九计器常速了标近料今半九商不群些因二越铁还达省规统入建人期极划党别民育养算持长高九出总火接较提阶况战几来直效关响存非意员快响看认适飞极治实石并子府。离引者集代又同基人知特江争别统但受生民阶公矿政四和个具度都而长手省路能应别向什了求号热政进新速放列面周权打议道感身适面类压务约类真走学提明速用置资是四。定议约温天力改数集科化这省后压机理际况制成转争号则风书律活至基育平车市口类龙酸海是展共养发十体料知九。
+      <div className="left">
+        <div className="resumeInfo">
+          <img src={require("./assets/images/photo.png")} alt="" />
+          <div className="resumeName"><strong>雷涛涛</strong><span>UI设计师</span></div>
+          <p>男 | 1986-05-02</p>
+          <p>电话：18620300502</p>
+          <p>微信：Asdflaoliao</p>
+          <p>邮箱：8631142@qq.com</p>
+          <p>作品集：fantasyltt.lofter.com</p>
+        </div>
+        <div className="skill">
+          <div className="reTitle titleSkill">技/能/熟/练</div>
+          <ul>
+            <li>Sketch/Figma/Xd<div><span></span></div></li>
+            <li>Photoshop<div><span></span></div></li>
+            <li>C4D<div><span></span></div></li>
+            <li>AE<div><span></span></div></li>
+            <li>CSS<div><span></span></div></li>
+            <li>Javascript<div><span></span></div></li>
+          </ul>
+        </div>
+        <div className="self">
+          <div className="reTitle titleSelf">自/我/评/价</div>
+          <div className="slefText">
+          精通软件：Photoshop、Sketch、C4D、AI、AE等；10年以上网站、移动端设计经验，拥有深厚的设计理论与娴熟的设计技巧了解并关注行业流行趋势；有成熟的设计作品、良好的创意构思能力；懂前端；具备良好的合作态度与团队精神，并富有工作激情、创造力和责任感；
+          </div>
+        </div>
+      </div>
+      <div className="right">
+        <div className="work">
+          <div className="reTitle titleWork">工/作/经/历</div>
+          <ul>
+            <li>
+              <div className="workTitle"><span>2019.07-至今</span><strong>置尚软件（深圳）有限公司</strong><span>UI设计师 / 网页设计师</span><p>技术部</p></div>
+              
+              <div className="workText">1.配合市场部推广设计相关广告和推广页。2. 制定UI设计界面规范，更改原型图交互效果产品初期挖掘用户需求，协助产品经理捋顺产品逻辑。3. 产品初期挖掘用户需求，协助产品经理捋顺产品逻辑。4. 负责产品视觉设计及交互效果，提升产品品质与用户体验。5.配合开发人员实现产品，并对产品进行测试。6.制作app广告视频。7.少量前端开发。</div>
+            </li>
+            <li>
+              <div className="workTitle"><span>2018.03-2019.06</span><strong>深圳市速易网络科技有限公司</strong><span>UI设计师 / 网页设计师</span><p>产品部</p></div>
+              
+              <div className="workText">1.负责金融类移动端网站页面的整体美工创意、设计和页面的重构；2.根据产品方案，完善网站页面和手机APP产品界面。3.配合产品经理对公司线上活动广告宣传进行创意策划、排版、美工设计。4.负责跟踪产品效果及用户体验，提出设计优化方案。5.分析当下流行趋势，定义并迭代符合金融行业的运营视觉设计方案。</div>
+            </li>
+            <li>
+              <div className="workTitle"><span>2010.07-2018.01</span><strong>深圳市星翼创想网络科技有限公司</strong><span>UI设计师 / 网页设计师</span><p>技术部</p></div>
+              
+              <div className="workText">1.负责PC端和移动端界面设计，跟踪产品效果，提出设计改善方案，把控设计周期和效果图设计。2.html、css3以及bootstrap对页面原型进行布局搭建。3.根据产品方案，完善网站页面和手机APP产品界面。4.负责各类专题页面、活动页面、图标制作、banner广告设计。5.项目改版、维护版本迭代、产品设计项目推广。</div>
+            </li>
+          </ul>
+        </div>
+        <div className="project">
+          <div className="reTitle titleProject">项/目/经/验</div>
+          <ul>
+            <li>
+              <div className="proTitle"><span>2019.07-至今</span><strong>金桔汇外汇交易平台</strong><span>UI设计 / 前端</span></div>
+              
+              <div className="proText">项目描述：优化官网设计，迭代app视觉设计提升视觉效果，优化用户体验。</div>
+            </li>
+          </ul>
+        </div>
+        <div className="edu">
+          <div className="reTitle titleEdu">教/育/经/历</div>
+          <ul>
+            <li>
+              <span>2019.01-2021.06</span><strong>桂林理工大学</strong><p>本科·广告学</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

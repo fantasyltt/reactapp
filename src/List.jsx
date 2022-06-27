@@ -263,56 +263,56 @@ const List = (props) =>{
     {
       id:56,
       rank:10.2,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 越南市场广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:57,
       rank:16.2,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:58,
       rank:13,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:59,
       rank:32.1,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:60,
       rank:32.3,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:61,
       rank:17.1,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:62,
       rank:17.2,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
     {
       id:63,
       rank:32.4,
-      title:'Gold Mandarin 广告宣传GM视频',
+      title:'Gold Mandarin 广告推广视频',
       type:'视频动画',
       year:2021
     },
