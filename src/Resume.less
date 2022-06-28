@@ -68,7 +68,70 @@
     }
   }
   .skill{
-    padding: 60px 0 30px;
+    padding: 60px 0 0;
+    ul{
+      li{
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 10px;
+        color: #6F7792;
+        div{
+          margin-top: 5px;
+          border-radius: 10px;
+          border-bottom: 3px solid #DFDFED;
+          position: relative;
+          span{
+            display: block;
+            border-radius: 10px;
+            border-bottom: 3px solid #14D5AD;
+            position: absolute;
+            width: 100%;
+          }
+        }
+        &:nth-child(1){
+          div{
+            span{
+              width: 85%;
+            }
+          }
+        }
+        &:nth-child(2){
+          div{
+            span{
+              width: 85%;
+            }
+          }
+        }
+        &:nth-child(3){
+          div{
+            span{
+              width: 65%;
+            }
+          }
+        }
+        &:nth-child(4){
+          div{
+            span{
+              width:50%;
+            }
+          }
+        }
+        &:nth-child(5){
+          div{
+            span{
+              width: 90%;
+            }
+          }
+        }
+        &:nth-child(6){
+          div{
+            span{
+              width:60%;
+            }
+          }
+        }
+      }
+    }
   }
   .self{
     padding: 60px 0 30px;
@@ -83,6 +146,43 @@
       border-left: 1px solid #DFDFED;
       margin-left: 20px;
       padding-left: 45px;
+      li{
+        margin-bottom: 15px;
+        .workTitle{
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          align-items: center;
+          color: #404451;
+          p{
+            font-weight: normal;
+            margin: 0 0 0 10px;
+            display: inline-block;
+            color: #6F7792;
+          }
+          span{
+            &:first-child{
+              width: 120px;
+              font-size: 12px;
+            }
+          }
+          strong{
+            flex-grow: 1;
+            font-size: 16px;
+          }
+        }
+        .workText{
+          padding: 15px 0;
+          text-align: justify;
+          line-height: 28px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+          .workText{
+            padding: 15px 0 0;
+          }
+        }
+      }
     }
   }
   .project{
@@ -91,6 +191,43 @@
       border-left: 1px solid #DFDFED;
       margin-left: 20px;
       padding-left: 45px;
+      li{
+        margin-bottom: 15px;
+        .proTitle{
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          align-items: center;
+          color: #404451;
+          p{
+            font-weight: normal;
+            margin: 0 0 0 10px;
+            display: inline-block;
+            color: #6F7792;
+          }
+          span{
+            &:first-child{
+              width: 120px;
+              font-size: 12px;
+            }
+          }
+          strong{
+            flex-grow: 1;
+            font-size: 16px;
+          }
+        }
+        .proText{
+          padding: 15px 0;
+          text-align: justify;
+          line-height: 28px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+          .proText{
+            padding: 15px 0 0;
+          }
+        }
+      }
     }
   }
   .edu{
@@ -99,6 +236,33 @@
       border-left: 1px solid #DFDFED;
       margin-left: 20px;
       padding-left: 45px;
+      li{
+        margin-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          align-items: center;
+          color: #404451;
+          p{
+            font-weight: normal;
+            margin: 0 0 0 10px;
+            display: inline-block;
+            color: #6F7792;
+          }
+          span{
+            &:first-child{
+              width: 120px;
+              font-size: 12px;
+            }
+          }
+          strong{
+            flex-grow: 1;
+            font-size: 16px;
+          }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
     }
   }
   @media screen and (max-width:1280px) {
