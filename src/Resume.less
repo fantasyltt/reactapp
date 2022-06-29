@@ -8,11 +8,11 @@
   &.active{
     display: flex;
   }
-  .left{
+  .resumeLeft{
     width: 25%;
     padding: 0 24px;
   }
-  .right{
+  .resumeRight{
     width: 75%;
     padding: 0 24px 0 48px;
   }
@@ -67,79 +67,7 @@
       background-size: 50px 50px;
     }
   }
-  .skill{
-    padding: 60px 0 0;
-    ul{
-      li{
-        font-weight: bold;
-        line-height: 30px;
-        margin-bottom: 10px;
-        color: #6F7792;
-        div{
-          margin-top: 5px;
-          border-radius: 10px;
-          border-bottom: 3px solid #DFDFED;
-          position: relative;
-          span{
-            display: block;
-            border-radius: 10px;
-            border-bottom: 3px solid #14D5AD;
-            position: absolute;
-            width: 100%;
-          }
-        }
-        &:nth-child(1){
-          div{
-            span{
-              width: 85%;
-            }
-          }
-        }
-        &:nth-child(2){
-          div{
-            span{
-              width: 85%;
-            }
-          }
-        }
-        &:nth-child(3){
-          div{
-            span{
-              width: 65%;
-            }
-          }
-        }
-        &:nth-child(4){
-          div{
-            span{
-              width:50%;
-            }
-          }
-        }
-        &:nth-child(5){
-          div{
-            span{
-              width: 90%;
-            }
-          }
-        }
-        &:nth-child(6){
-          div{
-            span{
-              width:60%;
-            }
-          }
-        }
-      }
-    }
-  }
-  .self{
-    padding: 60px 0 30px;
-    .slefText{
-      line-height: 30px;
-      text-align: justify;
-    }
-  }
+  
   .work{
     padding: 40px 0 30px;
     ul{
@@ -265,7 +193,122 @@
       }
     }
   }
+  .mobileInfo{
+    display: none;
+  }
+  .pcInfo{
+    display: block;
+  }
   @media screen and (max-width:1280px) {
+    padding: 0 12px;
+    .resumeLeft{
+      width: 25%;
+      padding: 0 12px;
+    }
+    .resumeRight{
+      width: 75%;
+      padding: 0 12px;
+    }
+  }
+  @media screen and (max-width:860px) {
+    padding: 0 12px;
+    .resumeLeft{
+      width: 25%;
+      padding: 0 12px;
+    }
+    .resumeRight{
+      width: 75%;
+      padding: 0 12px;
+    }
+  }
+  @media screen and (max-width:430px) {
+    margin-top: 0;
+    margin-bottom: 20px;
     padding: 0 24px;
+    &.active{
+      display: block;
+    }
+    .resumeLeft{
+      width: 100%;
+      padding: 0;
+    }
+    .resumeRight{
+      width: 100%;
+      padding: 0;
+    }
+    .work{
+      ul{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        li{
+          .workTitle{
+            display: block;
+            span{
+              display: block;
+            }
+            strong{
+              line-height: 40px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .project{
+      ul{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        li{
+          .proTitle{
+            display: block;
+            strong{
+              line-height: 32px;
+            }
+            span{
+              display: block;
+              &:last-child{
+                float: right;
+                line-height: 32px;
+              }
+            }
+          }
+          .proText{
+            clear: both;
+          }
+        }
+      }
+    }
+    .edu{
+      ul{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        li{
+            display: block;
+            span{
+              display: block;
+              float: left;
+              line-height: 30px;
+            }
+            strong{
+              float: right;
+              line-height: 32px;
+            }
+            p{
+              display: block;
+              margin: 0;
+              clear: both;
+            }
+        }
+      }
+    }
+    .mobileInfo{
+      display: block;
+    }
+    .pcInfo{
+      display: none;
+    }
   }
 }

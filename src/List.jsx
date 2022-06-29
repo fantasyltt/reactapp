@@ -517,7 +517,7 @@ const List = (props) =>{
   }else if (showDetail==5||showDetail==56||showDetail==57||showDetail==58||showDetail==59||showDetail==60||showDetail==61||showDetail==62||showDetail==63||showDetail==64) {
     inner=
       <div className={showDetail==64?"detailImg widthVideo":"detailImg"}>
-        <video width="100%" autoplay="autoplay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
+        <video width="100%" autoPlay="autoPlay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
           您的浏览器不支持Video标签。
         </video>
       </div>
