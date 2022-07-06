@@ -39,21 +39,21 @@ const List = (props) =>{
     {
     id:0,
     rank:0,
-    title:'SVO APP 新项目',
+    title:'GTrader APP',
     type:'APP',
     year:2021
     },
     {
       id:1,
       rank:1,
-      title:'金桔汇 APP 最新改版',
+      title:'金桔汇 APP',
       type:'APP',
       year:2021
     },
     {
       id:2,
       rank:2,
-      title:'分享行动落地页',
+      title:'分享行动运营落地页',
       type:'网页/H5',
       year:2021
     },
@@ -81,7 +81,7 @@ const List = (props) =>{
     {
       id:6,
       rank:6,
-      title:'感恩老用户活动',
+      title:'感恩老用户运营活动',
       type:'网页',
       year:2021
     },
@@ -123,14 +123,14 @@ const List = (props) =>{
     {
       id:12,
       rank:12,
-      title:'GM 新年200%赠金活动',
+      title:'GM 新年200%赠金运营活动',
       type:'网页/H5',
       year:2021
     },
     {
       id:13,
       rank:6.1,
-      title:'GM APP 抽奖活动',
+      title:'GM APP 抽奖运营活动',
       type:'H5',
       year:2021
     },
@@ -158,7 +158,7 @@ const List = (props) =>{
     {
       id:17,
       rank:5.1,
-      title:'盈汇黄金推广落地页',
+      title:'盈汇黄金推广运营落地页',
       type:'H5',
       year:2021
     },
@@ -235,7 +235,7 @@ const List = (props) =>{
     {
       id:28,
       rank:28,
-      title:'200%赠金活动',
+      title:'200%赠金运营活动',
       type:'网页/H5',
       year:2021
     },
