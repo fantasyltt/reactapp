@@ -15,6 +15,7 @@ const Header = (props) => {
   function switchTab(index) {
     setTab(index)
     props.tabId(index)
+    window.scrollTo(0,0)
   }
   function linkResume() {
     setTab(1)

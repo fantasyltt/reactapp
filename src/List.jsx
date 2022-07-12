@@ -44,6 +44,13 @@ const List = (props) =>{
     year:2021
     },
     {
+      id:65,
+      rank:1.5,
+      title:'FXnavi APP',
+      type:'APP',
+      year:2021
+    },
+    {
       id:1,
       rank:1,
       title:'金桔汇 APP',
@@ -52,7 +59,7 @@ const List = (props) =>{
     },
     {
       id:2,
-      rank:2,
+      rank:5,
       title:'分享行动运营落地页',
       type:'网页/H5',
       year:2021
