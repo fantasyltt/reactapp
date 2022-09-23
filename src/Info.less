@@ -71,3 +71,75 @@
     text-align: justify;
   }
 }
+
+.edu{
+  padding: 60px 0 0;
+  ul{
+    li{
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-weight: bold;
+        align-items: center;
+        color: #404451;
+        img{
+          width: 60px;
+        }
+        div{
+          flex-grow: 1;
+          padding: 0 0 0 15px;
+        }
+        p{
+          font-weight: normal;
+          margin: 2px 0;
+          color: #6F7792;
+        }
+        span{
+          &:first-child{
+            width: 100%;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+        strong{
+          font-size: 16px;
+          width: 100%;
+          display: block;
+        }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width:430px) {
+  .edu{
+    ul{
+      border: 0;
+      padding: 0;
+      margin: 0;
+      li{
+          display: flex;
+          span{
+            display: block;
+          }
+          strong{
+            line-height: 32px;
+            display: block;
+          }
+          p{
+            display: block;
+            margin: 0;
+            clear: both;
+          }
+      }
+    }
+  }
+  .mobileInfo{
+    display: block;
+  }
+  .pcInfo{
+    display: none;
+  }
+}

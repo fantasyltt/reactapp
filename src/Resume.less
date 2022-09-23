@@ -14,7 +14,7 @@
   }
   .resumeRight{
     width: 75%;
-    padding: 0 24px 0 48px;
+    padding: 0 24px 0 24px;
   }
   .resumeInfo{
     text-align: center;
@@ -126,29 +126,35 @@
     }
   }
   .project{
-    padding: 60px 0 30px;
+    padding: 60px 0 25px;
     ul{
       border-left: 1px solid #DFDFED;
-      margin-left: 20px;
-      padding-left: 45px;
+      padding-left: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px 0 20px;
       li{
         margin-bottom: 15px;
+        padding: 0 15px;
+        width:100%;
         .proTitle{
           display: flex;
           justify-content: space-between;
           font-weight: bold;
           align-items: center;
           color: #404451;
+          flex-wrap: wrap;
           p{
             font-weight: normal;
-            margin: 0 0 0 10px;
+            margin:15px 0;
             display: inline-block;
             color: #6F7792;
           }
           span{
             &:first-child{
-              width: 120px;
+              width:120px;
               font-size: 12px;
+              margin-bottom: 5px;
             }
           }
           strong{
@@ -157,83 +163,31 @@
           }
         }
         .proText{
-          padding: 15px 0;
+          padding: 10px 0 15px;
           text-align: justify;
           line-height: 28px;
+            strong{
+              width: 80px;
+            }
         }
         &:last-child{
           margin-bottom: 0;
           .proText{
-            padding: 15px 0 0;
+            padding: 5px 0 0;
           }
         }
       }
     }
   }
-  .edu{
-    padding: 60px 0 30px;
-    ul{
-      border-left: 1px solid #DFDFED;
-      margin-left: 20px;
-      padding-left: 45px;
-      li{
-        margin-bottom: 15px;
-          display: flex;
-          justify-content: space-between;
-          font-weight: bold;
-          align-items: center;
-          color: #404451;
-          p{
-            font-weight: normal;
-            margin: 0 0 0 10px;
-            display: inline-block;
-            color: #6F7792;
-          }
-          span{
-            &:first-child{
-              width: 120px;
-              font-size: 12px;
-            }
-          }
-          strong{
-            flex-grow: 1;
-            font-size: 16px;
-          }
-        &:last-child{
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
+
   .mobileInfo{
     display: none;
   }
   .pcInfo{
     display: block;
   }
-  @media screen and (max-width:1280px) {
-    padding: 0 12px;
-    .resumeLeft{
-      width: 25%;
-      padding: 0 12px;
-    }
-    .resumeRight{
-      width: 75%;
-      padding: 0 12px;
-    }
-  }
-  @media screen and (max-width:860px) {
-    padding: 0 12px;
-    .resumeLeft{
-      width: 25%;
-      padding: 0 12px;
-    }
-    .resumeRight{
-      width: 75%;
-      padding: 0 12px;
-    }
-  }
-  @media screen and (max-width:430px) {
+
+  @media screen and (max-width:1140px) {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0 24px;
@@ -273,6 +227,8 @@
         padding: 0;
         margin: 0;
         li{
+          width: 100%;
+          padding: 0 0 10px;
           .proTitle{
             display: block;
             strong{
@@ -292,30 +248,7 @@
         }
       }
     }
-    .edu{
-      ul{
-        border: 0;
-        padding: 0;
-        margin: 0;
-        li{
-            display: block;
-            span{
-              display: block;
-              float: left;
-              line-height: 30px;
-            }
-            strong{
-              float: right;
-              line-height: 32px;
-            }
-            p{
-              display: block;
-              margin: 0;
-              clear: both;
-            }
-        }
-      }
-    }
+    
     .mobileInfo{
       display: block;
     }

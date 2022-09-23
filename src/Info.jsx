@@ -3,6 +3,7 @@ import './Info.less';
 const Info = (props) =>{
   return (
     <div>
+      
       <div className="skill">
           <div className="reTitle titleSkill">技/能/熟/练</div>
           <ul>
@@ -12,6 +13,23 @@ const Info = (props) =>{
             <li>AE<div><span></span></div></li>
             <li>CSS<div><span></span></div></li>
             <li>Javascript<div><span></span></div></li>
+          </ul>
+        </div>
+        <div className="edu">
+          <div className="reTitle titleEdu">教/育/经/历</div>
+          <ul>
+            <li>
+              <img src={require("./assets/images/gut.png")} alt="桂林理工大学" />
+              <div>
+                <span>2019.01-2021.06</span><strong>桂林理工大学</strong><p>本科·广告学</p>
+              </div>
+            </li>
+            <li>
+              <img src={require("./assets/images/guet.png")} alt="桂林电子科技大学" />
+              <div>
+              <span>2015.01-2017.07</span><strong>桂林电子科技大学</strong><p>大专·电子信息工程</p>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="self">
