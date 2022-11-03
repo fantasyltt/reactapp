@@ -8,7 +8,7 @@ const Resume = (props) =>{
         <div className="resumeInfo">
           <img src={require("./assets/images/photo.png")} alt="" />
           <div className="resumeName"><strong>雷涛涛</strong><span>UI设计师</span></div>
-          <p>男 | 1986-05-02</p> 
+          <p>男 | 1986-05-02 | 广西</p>
           <p>电话：18620300502</p>
           <p>微信：Asdflaoliao</p>
           <p>邮箱：8631142@qq.com</p>
@@ -23,7 +23,7 @@ const Resume = (props) =>{
           <div className="reTitle titleWork">工/作/经/历</div>
           <ul>
             <li>
-              <div className="workTitle"><span>2019.07-至 今</span><strong>置尚软件（深圳）有限公司</strong><span>UI设计师<p>技术部</p></span></div>
+              <div className="workTitle"><span>2019.07-2022.11</span><strong>置尚软件（深圳）有限公司</strong><span>UI设计师<p>技术部</p></span></div>
               
               <div className="workText">
                 <p><strong>评审分析: </strong>制定UI设计界面规范，更改原型图交互效果产品初期挖掘用户需求，协助产品经理捋顺产品逻辑;</p>
@@ -31,7 +31,7 @@ const Resume = (props) =>{
                 <p><strong>视频制作: </strong>设计制作lottie动画，制作app广告DM视频;</p>
                 <p><strong>前端开发: </strong>协助前端工程师少量落地页的部分前端开发;</p>
                 <p><strong>后期跟进: </strong>配合开发人员还原产品设计完善产品细节，并对产品交互进行改进;</p>
-                <p><strong>工作成果: </strong>在职期间工作受到市场部同事的高度认可，大幅提升了市场部相关需求的视觉设计满意度，客户转化率提高20%+。</p>
+                <p><strong>工作成果: </strong>在职期间工作受到市场部同事的高度认可，大幅提升了市场部相关需求的视觉设计满意度，APP用户留存率上升14%，推广页客户转化率提高20%。</p>
               </div>
             </li>
             <li>
@@ -65,32 +65,32 @@ const Resume = (props) =>{
           <div className="reTitle titleProject">项/目/经/验</div>
           <ul>
             <li>
-              <div className="proTitle"><span>2022.01-至 今</span><strong>Gtrader APP</strong><span>UI设计</span></div>
+              <div className="proTitle"><span>2022.01-2022.11</span><strong>Gtrader APP</strong><span>UI设计<p>置尚软件</p></span></div>
               
-              <div className="proText"><strong>项目描述：</strong>APP视觉设计，</div>
+              <div className="proText"><strong>项目描述：</strong>公司投资交易平台APP项目改版。主导完成新版本的交互和视觉输出，参与用户模型、设计分析、风格定义、设计规范等环节。基于国外用户使用习惯对产品的整天结构进行体验优化，并对多个页面进行设计升级。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2019.07-2021.8</span><strong>金桔汇外汇交易平台</strong><span>UI设计 / 视觉设计</span></div>
+              <div className="proTitle"><span>2019.07-2021.8</span><strong>金桔汇外汇交易平台</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>优化官网设计，迭代app视觉设计提升视觉效果，协助开发调试app还原设计图以及改善app交互，动效设计优化用户体验。负责推广落地页设计、banner广告设计。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2019.08-2021.12</span><strong>FXnavi APP</strong><span>UI设计</span></div>
+              <div className="proTitle"><span>2019.08-2021.12</span><strong>FXnavi APP</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>负责APP的视觉设计，根据产品需求完成UI效果图设计。负责推广网页设计、APP视觉效果的维护以及界面视觉效果的输出。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.11-2018.12</span><strong>速易网络合作方后台管理系统</strong><span>UI设计 / 前端</span></div>
+              <div className="proTitle"><span>2018.11-2018.12</span><strong>速易网络合作方后台管理系统</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>速易网络合作方后台管理系统改版，提升视觉效果，优化用户体验。负责产品的UI设计、页面交互、前端代码。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.09-2018.10</span><strong>车保宝官方网站</strong><span>UI设计 / 前端</span></div>
+              <div className="proTitle"><span>2018.09-2018.10</span><strong>车保宝官方网站</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>公司新产品的官网设计，负责产品的UI设计、banner图片设计、页面交互、前端代码。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.07-2018.09</span><strong>汽修窝小程序2.0改版</strong><span>UI设计 / 前端</span></div>
+              <div className="proTitle"><span>2018.07-2018.09</span><strong>汽修窝小程序2.0改版</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>在1.0的基础上优化视觉效果、提升用户体验。负责产品的UI设计、小程序的前端开发、优化产品细节。</div>
             </li>

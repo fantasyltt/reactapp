@@ -5,6 +5,13 @@
   margin: 50px auto 100px;
   display: none;
   max-width: 1440px;
+  @media screen and (max-width:1280px) {
+    padding: 0 24px;
+  }
+  @media screen and (max-width:860px) {
+  }
+  @media screen and (max-width:430px) {
+  }
   &.active{
     display: flex;
   }
@@ -46,6 +53,8 @@
     padding-left: 60px;
     line-height: 40px;
     height: 80px;
+    margin-left: 5px;
+    padding-left: 70px;
     &.titleSkill{
       background: url(./assets/images/skill.png) no-repeat;
       background-size: 50px 50px;
@@ -73,7 +82,7 @@
     ul{
       border-left: 1px solid #DFDFED;
       margin-left: 20px;
-      padding-left: 45px;
+      padding-left: 60px;
       li{
         margin-bottom: 15px;
         .workTitle{
@@ -129,7 +138,7 @@
     padding: 60px 0 25px;
     ul{
       border-left: 1px solid #DFDFED;
-      padding-left: 30px;
+      padding-left: 45px;
       display: flex;
       flex-wrap: wrap;
       margin: 0 -15px 0 20px;
@@ -146,15 +155,19 @@
           flex-wrap: wrap;
           p{
             font-weight: normal;
-            margin:15px 0;
+            margin: 0 0 0 10px;
             display: inline-block;
             color: #6F7792;
+            border: 1px solid #aaafc1;
+            padding: 0 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: 18px;
           }
           span{
             &:first-child{
               width:120px;
               font-size: 12px;
-              margin-bottom: 5px;
             }
           }
           strong{
