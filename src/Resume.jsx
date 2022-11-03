@@ -70,27 +70,27 @@ const Resume = (props) =>{
               <div className="proText"><strong>项目描述：</strong>公司投资交易平台APP项目改版。主导完成新版本的交互和视觉输出，参与用户模型、设计分析、风格定义、设计规范等环节。基于国外用户使用习惯对产品的整天结构进行体验优化，并对多个页面进行设计升级。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2019.07-2021.8</span><strong>金桔汇外汇交易平台</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
-              
-              <div className="proText"><strong>项目描述：</strong>优化官网设计，迭代app视觉设计提升视觉效果，协助开发调试app还原设计图以及改善app交互，动效设计优化用户体验。负责推广落地页设计、banner广告设计。</div>
-            </li>
-            <li>
-              <div className="proTitle"><span>2019.08-2021.12</span><strong>FXnavi APP</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
+              <div className="proTitle"><span>2020.08-2021.12</span><strong>FXnavi APP</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>负责APP的视觉设计，根据产品需求完成UI效果图设计。负责推广网页设计、APP视觉效果的维护以及界面视觉效果的输出。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.11-2018.12</span><strong>速易网络合作方后台管理系统</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
+              <div className="proTitle"><span>2019.07-2021.12</span><strong>金桔汇外汇交易平台</strong><span>UI设计 / 视觉设计<p>置尚软件</p></span></div>
+              
+              <div className="proText"><strong>项目描述：</strong>优化官网设计，迭代app视觉设计提升视觉效果，协助开发调试app还原设计图以及改善app交互，动效设计优化用户体验。负责推广落地页设计、banner广告设计。</div>
+            </li>
+            <li>
+              <div className="proTitle"><span>2018.11-2019.02</span><strong>速易网络合作方后台管理系统</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>速易网络合作方后台管理系统改版，提升视觉效果，优化用户体验。负责产品的UI设计、页面交互、前端代码。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.09-2018.10</span><strong>车保宝官方网站</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
+              <div className="proTitle"><span>2018.09-2018.11</span><strong>车保宝官方网站</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>公司新产品的官网设计，负责产品的UI设计、banner图片设计、页面交互、前端代码。</div>
             </li>
             <li>
-              <div className="proTitle"><span>2018.07-2018.09</span><strong>汽修窝小程序2.0改版</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
+              <div className="proTitle"><span>2018.07-2018.12</span><strong>汽修窝小程序2.0改版</strong><span>UI设计 / 前端<p>速易网络</p></span></div>
               
               <div className="proText"><strong>项目描述：</strong>在1.0的基础上优化视觉效果、提升用户体验。负责产品的UI设计、小程序的前端开发、优化产品细节。</div>
             </li>
