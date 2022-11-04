@@ -23,7 +23,7 @@ const Resume = (props) =>{
           <div className="reTitle titleWork">工/作/经/历</div>
           <ul>
             <li>
-              <div className="workTitle"><span>2019.07-2022.11</span><strong>置尚软件（深圳）有限公司</strong><span>UI设计师<p>技术部</p></span></div>
+              <div className="workTitle"><span>2019.07-2022.11</span><strong>置尚软件（深圳）有限公司</strong><span>高级UI设计师<p>技术部</p></span></div>
               
               <div className="workText">
                 <p><strong>评审分析: </strong>制定UI设计界面规范，更改原型图交互效果产品初期挖掘用户需求，协助产品经理捋顺产品逻辑;</p>
