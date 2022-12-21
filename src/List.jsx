@@ -572,7 +572,7 @@ function switchSelect(e) {
 
       <div className="listSelect" >
         <div className={selectHover==false?"selector hover":"selector"} onClick={openSelect.bind(this)}>{selectedText}<span></span>
-          <div className="selectList">
+          <div className="selectList">  
             <ul>
               {SelectList.map((item) => {
                 return (
