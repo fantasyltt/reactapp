@@ -51,6 +51,20 @@ const List = (props) =>{
       year:2021
     },
     {
+      id:66,
+      rank:1.6,
+      title:'SVOFX',
+      type:'网页',
+      year:2023
+    },
+    {
+      id:67,
+      rank:4.9,
+      title:'海外游戏投放广告',
+      type:'广告',
+      year:2023
+    },
+    {
       id:1,
       rank:1,
       title:'金桔汇 APP',
@@ -59,7 +73,7 @@ const List = (props) =>{
     },
     {
       id:2,
-      rank:5,
+      rank:4.8,
       title:'分享行动运营落地页',
       type:'网页/H5',
       year:2021
@@ -73,14 +87,14 @@ const List = (props) =>{
     },
     {
       id:4,
-      rank:4,
+      rank:5,
       title:'Interpret CMS',
       type:'网页',
       year:2021
     },
     {
       id:5,
-      rank:5,
+      rank:3.1,
       title:'Lottie 动画 icon',
       type:'视频动画',
       year:2021
@@ -101,7 +115,7 @@ const List = (props) =>{
     },
     {
       id:8,
-      rank:3.1,
+      rank:5,
       title:'SovFx 日文新年活动',
       type:'网页/H5',
       year:2021
