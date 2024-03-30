@@ -552,6 +552,7 @@ const List = (props) =>{
     </div>
   )
   function hideBtn() {
+    document.querySelector('.detailBox').scrollTop=0
     hideDetail(false)
     setDetail()
   }
