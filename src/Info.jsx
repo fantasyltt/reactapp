@@ -24,12 +24,12 @@ const Info = (props) =>{
                 <span>2019.01-2021.06</span><strong>桂林理工大学</strong><p>本科·广告学</p>
               </div>
             </li>
-            <li>
+            {/* <li>
               <img src={require("./assets/images/guet.png")} alt="桂林电子科技大学" />
               <div>
               <span>2015.01-2017.07</span><strong>桂林电子科技大学</strong><p>大专·电子信息工程</p>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="self">
