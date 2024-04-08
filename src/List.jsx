@@ -531,7 +531,7 @@ const List = (props) =>{
   if(showDetail==undefined){
     inner=
       <div className="detailImg">
-        <video width="100%" autoPlay="autoPlay" loop="loop" id="videoPlayer">
+        <video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer">
           您的浏览器不支持Video标签。
         </video>
       </div>
@@ -539,13 +539,15 @@ const List = (props) =>{
   }else if (showDetail==5||showDetail==56||showDetail==57||showDetail==58||showDetail==59||showDetail==60||showDetail==61||showDetail==62||showDetail==63||showDetail==64) {
     inner=
       <div className={showDetail==64?"detailImg widthVideo":"detailImg"}>
-        <video width="100%" autoPlay="autoPlay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mov")} id="videoPlayer">
+        <video width="100%" autoPlay="autoPlay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mov")} className="videoPlayer">
           您的浏览器不支持Video标签。
         </video>
       </div>
   }else{
     inner=
-      <div className="detailImg"><img src={require("./assets/detail/detail-"+showDetail+".jpg")} alt="" /></div>
+      <div className="detailImg"><img src={require("./assets/detail/detail-"+showDetail+".jpg")} alt="" /><video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer">
+      您的浏览器不支持Video标签。
+    </video></div>
   }
   const showImg =(
     <div>
@@ -553,13 +555,16 @@ const List = (props) =>{
     </div>
   )
  
-  const videoPlayer = document.querySelector("#videoPlayer")
+  
+  
+
   function switchDetail(e,t,p) {
     setDetail(e)
     setType(p)
     setTitle(t)
     hideDetail(true)
-    console.log(videoPlayer)
+    let videoPlayer = document.querySelector(".videoPlayer")
+    console.log(videoPlayer);
     videoPlayer.volume = 0.2
   }
  
