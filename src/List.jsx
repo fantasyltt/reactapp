@@ -570,6 +570,8 @@ const List = (props) =>{
  
 
   function hideBtn() {
+    let videoPlayer = document.querySelector(".videoPlayer")
+    videoPlayer.pause()
     document.querySelector('.detailBox').scrollTop=0
     hideDetail(false)
     setDetail()
