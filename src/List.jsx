@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useRef,useEffect} from 'react';
 import './List.less';
 
 const List = (props) =>{
@@ -32,8 +32,6 @@ const List = (props) =>{
       title:"其他"
     }
   ]
-
-
 
   const caseList = [
     {
@@ -515,6 +513,7 @@ const List = (props) =>{
   ]
 
   const [active,setTab]  = useState(0)
+
   function switchTab(index) {
     setTab(index)    
   }
@@ -524,21 +523,23 @@ const List = (props) =>{
   const [showDetail,setDetail]  = useState()
   const [showtitle,setTitle]  = useState("")
   const [showType,setType]  = useState("")
-  function switchDetail(e,t,p) {
-    setDetail(e)
-    setType(p)
-    setTitle(t)
-    hideDetail(true)
-  }
+ 
+
+
   let inner;
+  
   if(showDetail==undefined){
     inner=
-      <div className="detailImg"></div>
+      <div className="detailImg">
+        <video width="100%" autoPlay="autoPlay" loop="loop" id="videoPlayer">
+          您的浏览器不支持Video标签。
+        </video>
+      </div>
 
   }else if (showDetail==5||showDetail==56||showDetail==57||showDetail==58||showDetail==59||showDetail==60||showDetail==61||showDetail==62||showDetail==63||showDetail==64) {
     inner=
       <div className={showDetail==64?"detailImg widthVideo":"detailImg"}>
-        <video width="100%" autoPlay="autoPlay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mp4")}>
+        <video width="100%" autoPlay="autoPlay" loop="loop" controls src={require("./assets/detail/detail-"+showDetail+".mov")} id="videoPlayer">
           您的浏览器不支持Video标签。
         </video>
       </div>
@@ -551,12 +552,24 @@ const List = (props) =>{
       { inner }
     </div>
   )
+ 
+  const videoPlayer = document.querySelector("#videoPlayer")
+  function switchDetail(e,t,p) {
+    setDetail(e)
+    setType(p)
+    setTitle(t)
+    hideDetail(true)
+    console.log(videoPlayer)
+    videoPlayer.volume = 0.2
+  }
+ 
+
   function hideBtn() {
     document.querySelector('.detailBox').scrollTop=0
     hideDetail(false)
     setDetail()
   }
-
+  
 const SelectList = [
   {
     id:0,
@@ -582,7 +595,9 @@ function switchSelect(e) {
     setSelectHover(true)
 }
 
+
   return (
+    
     <div className={props.show==0?"List Acitve":"List"} >
 
       <div className="listSelect" >
@@ -685,6 +700,8 @@ function switchSelect(e) {
       <div className={hide==true?"detailShadow active":"detailShadow"} onClick={hideBtn.bind(this)}></div>
 
     </div>
+    
+   
   );
 }
 
