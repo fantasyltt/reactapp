@@ -531,7 +531,7 @@ const List = (props) =>{
   if(showDetail==undefined){
     inner=
       <div className="detailImg">
-        <video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer">
+        <video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer hide">
           您的浏览器不支持Video标签。
         </video>
       </div>
@@ -545,7 +545,7 @@ const List = (props) =>{
       </div>
   }else{
     inner=
-      <div className="detailImg"><img src={require("./assets/detail/detail-"+showDetail+".jpg")} alt="" /><video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer">
+      <div className="detailImg"><img src={require("./assets/detail/detail-"+showDetail+".jpg")} alt="" /><video width="100%" autoPlay="autoPlay" loop="loop" className="videoPlayer hide">
       您的浏览器不支持Video标签。
     </video></div>
   }
